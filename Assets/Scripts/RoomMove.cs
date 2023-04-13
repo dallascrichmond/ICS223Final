@@ -8,6 +8,7 @@ public class RoomMove : MonoBehaviour
 {
     public Vector2 cameraChangeMax;
     public Vector2 cameraChangeMin;
+    public Vector3 playerChange;
     private CameraMovement cam;
     private bool TriggeredOnce = false;
     public bool needText;
@@ -34,6 +35,7 @@ public class RoomMove : MonoBehaviour
         {
             cam.minPosition += cameraChangeMin;
             cam.maxPosition += cameraChangeMax;
+            other.transform.position += playerChange;
             TriggeredOnce = true;
             if (needText)
             {
@@ -44,6 +46,7 @@ public class RoomMove : MonoBehaviour
         {
             cam.minPosition -= cameraChangeMin;
             cam.maxPosition -= cameraChangeMax;
+            other.transform.position -= playerChange;
             TriggeredOnce = false;
             if (needText)
             {
