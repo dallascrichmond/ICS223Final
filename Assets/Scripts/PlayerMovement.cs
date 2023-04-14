@@ -47,7 +47,6 @@ public class PlayerMovement : MonoBehaviour
         {
             UpdateAnimationAndMove();
         }
-
     }
 
     private IEnumerator AttackCo()
