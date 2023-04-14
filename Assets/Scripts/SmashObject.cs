@@ -15,10 +15,10 @@ public class SmashObject : MonoBehaviour
     public void Smash()
     {
         anim.SetBool("smash", true);
-        StartCoroutine(breakCo());
+        StartCoroutine(BreakCo());
     }
 
-    IEnumerator breakCo()
+    IEnumerator BreakCo()
     {
         yield return new WaitForSeconds(.3f);
         this.gameObject.SetActive(false);
