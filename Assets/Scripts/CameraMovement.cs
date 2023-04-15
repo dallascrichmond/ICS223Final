@@ -9,6 +9,11 @@ public class CameraMovement : MonoBehaviour
     public Vector2 maxPosition;
     public Vector2 minPosition;
 
+    private void Start()
+    {
+        transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+    }
+
     void FixedUpdate()
     {
         if(transform.position != target.position)
