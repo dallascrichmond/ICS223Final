@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidbody;
     private Vector3 movement;
     private Animator anim;
+    public FloatValue currentHealth;
+    public SignalSender playerHealthSignal;
 
     void Start()
     {
@@ -79,9 +81,15 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody.MovePosition(transform.position + movement.normalized * speed * Time.fixedDeltaTime);
     }
 
-    public void Knock(float knockTime)
+    public void Knock(float knockTime, float damage)
     {
-        StartCoroutine(KnockCo(knockTime));
+        currentHealth.initialValue -= damage;
+
+        if (currentHealth.initialValue > 0)
+        {
+            playerHealthSignal.Raise();
+            StartCoroutine(KnockCo(knockTime));
+        }
     }
 
     private IEnumerator KnockCo(float knockTime)
