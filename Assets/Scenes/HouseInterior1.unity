@@ -5311,6 +5311,18 @@ PrefabInstance:
       value: SceneTransition
       objectReference: {fileID: 0}
     - target: {fileID: 5094473565766302015, guid: 2d297bf30b60b114390a7841f6890d0b, type: 3}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094473565766302015, guid: 2d297bf30b60b114390a7841f6890d0b, type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 4078384083093296444, guid: 6084cde3175ce3246be5bd95fdf72a73, type: 3}
+    - target: {fileID: 5094473565766302015, guid: 2d297bf30b60b114390a7841f6890d0b, type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 9091786175845538976, guid: d3b0e7a4295dd5b48a7a49d3cd578169, type: 3}
+    - target: {fileID: 5094473565766302015, guid: 2d297bf30b60b114390a7841f6890d0b, type: 3}
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: e9797ec88c12c74499f231d24888a1ee, type: 2}
