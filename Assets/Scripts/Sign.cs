@@ -6,9 +6,12 @@ using TMPro;
 
 public class Sign : MonoBehaviour
 {
+    public SignalSender contextOn;
+    public SignalSender contextOff;
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
     public string dialog;
+    public bool playerInRange;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +22,28 @@ public class Sign : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
+        {
+            if (dialogBox.activeInHierarchy)
+            {
+                dialogBox.SetActive(false);
+            }
+            else
+            {
+                dialogBox.SetActive(true);
+                dialogText.text = dialog;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            dialogBox.SetActive(true);
-            dialogText.text = dialog;
+            contextOn.Raise();
+            playerInRange = true;
+            //dialogBox.SetActive(true);
+            //dialogText.text = dialog;
         }
     }
 
@@ -35,6 +51,8 @@ public class Sign : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            contextOff.Raise();
+            playerInRange = false;
             dialogBox.SetActive(false);
 
         }
