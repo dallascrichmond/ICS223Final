@@ -6,8 +6,7 @@ using TMPro;
 
 public class Sign : MonoBehaviour
 {
-    public SignalSender contextOn;
-    public SignalSender contextOff;
+    public SignalSender context;
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
     public string dialog;
@@ -38,9 +37,9 @@ public class Sign : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
-            contextOn.Raise();
+            context.Raise();
             playerInRange = true;
             //dialogBox.SetActive(true);
             //dialogText.text = dialog;
@@ -49,9 +48,9 @@ public class Sign : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
-            contextOff.Raise();
+            context.Raise();
             playerInRange = false;
             dialogBox.SetActive(false);
 
