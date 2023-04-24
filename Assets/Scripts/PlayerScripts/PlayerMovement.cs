@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     public FloatValue currentHealth;
     public SignalSender playerHealthSignal;
     public VectorValue startingPosition;
+    public Inventory playerInventory;
+    public SpriteRenderer receivedItemSprite;
 
     void Start()
     {
@@ -35,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //if(currentState == PlayerState.interact)
+        //{
+        //    return;
+        //}
+
         movement = Vector3.zero;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -43,6 +50,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        if (currentState == PlayerState.interact)
+        {
+            return;
+        }
+
         if (Input.GetButton("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
             StartCoroutine(AttackCo());
@@ -60,7 +73,30 @@ public class PlayerMovement : MonoBehaviour
         yield return null;
         anim.SetBool("attacking", false);
         yield return new WaitForSeconds(.3f);
-        currentState = PlayerState.walk;
+        if(currentState != PlayerState.interact)
+        {
+            currentState = PlayerState.walk;
+        }
+    }
+
+    public void RaiseItem()
+    {
+        if(playerInventory.currentItem != null)
+        {
+            if (currentState != PlayerState.interact)
+            {
+                anim.SetBool("receiveItem", true);
+                currentState = PlayerState.interact;
+                receivedItemSprite.sprite = playerInventory.currentItem.itemSprite;
+            }
+            else
+            {
+                anim.SetBool("receiveItem", false);
+                currentState = PlayerState.idle;
+                receivedItemSprite.sprite = null;
+                playerInventory.currentItem = null;
+            }
+        }
     }
 
     void UpdateAnimationAndMove()
