@@ -40,6 +40,7 @@ public class TreasureChest : Interactable
 
     public void OpenChest()
     {
+        anim.SetBool("opened", true);
         dialogBox.SetActive(true);
         dialogText.text = contents.itemDescription;
         playerInventory.AddItem(contents);
@@ -47,8 +48,6 @@ public class TreasureChest : Interactable
         raiseItem.Raise();
         context.Raise();
         isOpen = true;
-        anim.SetBool("opened", true);
-
     }
 
     public void ChestOpened()
