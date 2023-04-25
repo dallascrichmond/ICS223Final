@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public VectorValue startingPosition;
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
+    public SignalSender playerHit;
 
     void Start()
     {
@@ -37,11 +38,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        //if(currentState == PlayerState.interact)
-        //{
-        //    return;
-        //}
-
         movement = Vector3.zero;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -135,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator KnockCo(float knockTime)
     {
+        playerHit.Raise();
         if (myRigidbody != null)
         {
             yield return new WaitForSeconds(knockTime);
