@@ -216,6 +216,14 @@ PrefabInstance:
       value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 5094473565766302015, guid: 2d297bf30b60b114390a7841f6890d0b, type: 3}
+      propertyPath: cameraMax
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c538dfa043865f46b11d32c27d0c2cc, type: 2}
+    - target: {fileID: 5094473565766302015, guid: 2d297bf30b60b114390a7841f6890d0b, type: 3}
+      propertyPath: cameraMin
+      value: 
+      objectReference: {fileID: 11400000, guid: 32b16bf2d868da842ab8ba2b8f18d31c, type: 2}
+    - target: {fileID: 5094473565766302015, guid: 2d297bf30b60b114390a7841f6890d0b, type: 3}
       propertyPath: fadeInPanel
       value: 
       objectReference: {fileID: 4078384083093296444, guid: 6084cde3175ce3246be5bd95fdf72a73, type: 3}
@@ -3402,6 +3410,9 @@ MonoBehaviour:
   smoothing: 0.1
   maxPosition: {x: 0, y: 0}
   minPosition: {x: 0, y: 0}
+  anim: {fileID: 0}
+  camMin: {fileID: 11400000, guid: df576abf07bf7334389a1617e931ea08, type: 2}
+  camMax: {fileID: 11400000, guid: 8bafebba7701edd449f93fb2d5306a2c, type: 2}
 --- !u!1 &1336063548
 GameObject:
   m_ObjectHideFlags: 0
