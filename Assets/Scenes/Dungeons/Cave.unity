@@ -709,6 +709,7 @@ MonoBehaviour:
   moveSpeed: 2
   enemyName: Kale the Master Log
   deathEffect: {fileID: 6521414427940197272, guid: 192c0db8de47d5d40aa577ddd69a4b21, type: 3}
+  thisLoot: {fileID: 11400000, guid: 1acb721bd5705c3438a38b688700c2e6, type: 2}
   roomSignal: {fileID: 11400000, guid: e7c96ed460baa4a4aa2bf4efac0ec059, type: 2}
   myRigidBody: {fileID: 0}
   target: {fileID: 0}
@@ -1127,6 +1128,7 @@ MonoBehaviour:
   moveSpeed: 2
   enemyName: Kale the Master Log
   deathEffect: {fileID: 6521414427940197272, guid: 192c0db8de47d5d40aa577ddd69a4b21, type: 3}
+  thisLoot: {fileID: 11400000, guid: 1acb721bd5705c3438a38b688700c2e6, type: 2}
   roomSignal: {fileID: 11400000, guid: e7c96ed460baa4a4aa2bf4efac0ec059, type: 2}
   myRigidBody: {fileID: 0}
   target: {fileID: 0}
@@ -20655,6 +20657,7 @@ MonoBehaviour:
   moveSpeed: 2
   enemyName: Kale the Master Log
   deathEffect: {fileID: 6521414427940197272, guid: 192c0db8de47d5d40aa577ddd69a4b21, type: 3}
+  thisLoot: {fileID: 11400000, guid: 1acb721bd5705c3438a38b688700c2e6, type: 2}
   roomSignal: {fileID: 11400000, guid: e7c96ed460baa4a4aa2bf4efac0ec059, type: 2}
   myRigidBody: {fileID: 0}
   target: {fileID: 0}
@@ -20990,6 +20993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ade63507a3a7b4eb0c15a9f793fbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisLoot: {fileID: 11400000, guid: 1acb721bd5705c3438a38b688700c2e6, type: 2}
 --- !u!4 &7095834095409597562
 Transform:
   m_ObjectHideFlags: 0
@@ -21485,6 +21489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ade63507a3a7b4eb0c15a9f793fbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisLoot: {fileID: 11400000, guid: 1acb721bd5705c3438a38b688700c2e6, type: 2}
 --- !u!114 &8974987069615593332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21497,6 +21502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ade63507a3a7b4eb0c15a9f793fbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisLoot: {fileID: 11400000, guid: 1acb721bd5705c3438a38b688700c2e6, type: 2}
 --- !u!95 &8974987069615593333
 Animator:
   serializedVersion: 4
@@ -21755,6 +21761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ade63507a3a7b4eb0c15a9f793fbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisLoot: {fileID: 11400000, guid: 1acb721bd5705c3438a38b688700c2e6, type: 2}
 --- !u!95 &8974987069687715231
 Animator:
   serializedVersion: 4
@@ -21787,6 +21794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ade63507a3a7b4eb0c15a9f793fbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisLoot: {fileID: 11400000, guid: 1acb721bd5705c3438a38b688700c2e6, type: 2}
 --- !u!95 &8974987069793351671
 Animator:
   serializedVersion: 4
@@ -21952,6 +21960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ade63507a3a7b4eb0c15a9f793fbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisLoot: {fileID: 11400000, guid: 1acb721bd5705c3438a38b688700c2e6, type: 2}
 --- !u!1 &8974987069969360360
 GameObject:
   m_ObjectHideFlags: 0

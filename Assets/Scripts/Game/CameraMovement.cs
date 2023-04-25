@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour
 
     private void Start()
     {
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
     }
 
@@ -31,8 +31,8 @@ public class CameraMovement : MonoBehaviour
 
     public void BeginKick()
     {
-        anim.SetBool("kick_active", true);
-        StartCoroutine(KickCo());
+        //anim.SetBool("kick_active", true);
+        //StartCoroutine(KickCo());
     }
 
     public IEnumerator KickCo()
