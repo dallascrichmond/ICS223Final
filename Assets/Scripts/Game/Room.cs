@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class Room : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class Room : MonoBehaviour
                 ChangeActivation(pot, true);
 
             virturalCamera.SetActive(true);
+            virturalCamera.GetComponent<CinemachineVirtualCamera>().Priority = 99;
         }
     }
 
