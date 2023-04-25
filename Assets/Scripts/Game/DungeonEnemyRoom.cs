@@ -17,10 +17,11 @@ public class DungeonEnemyRoom : DungeonRoom
         {
             if (enemies[i].gameObject.activeInHierarchy && i < enemies.Length - 1)
             {
+                Debug.Log("Here");
                 return;
             }
-            OpenDoors();
         }
+        OpenDoors();
     }
 
     protected override void OnTriggerEnter2D(Collider2D other)
