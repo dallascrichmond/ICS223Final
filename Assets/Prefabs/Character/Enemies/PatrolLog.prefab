@@ -217,11 +217,11 @@ MonoBehaviour:
   moveSpeed: 2
   enemyName: Patrol log
   deathEffect: {fileID: 6521414427940197272, guid: 192c0db8de47d5d40aa577ddd69a4b21, type: 3}
+  roomSignal: {fileID: 11400000, guid: 60c3db791540f4046b5325202acc2c98, type: 2}
   myRigidBody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 3
   attackRadius: 1
-  homePosition: {fileID: 0}
   anim: {fileID: 0}
   path:
   - {fileID: 0}

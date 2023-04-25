@@ -31,7 +31,7 @@ public class Room : MonoBehaviour
         }
     }
 
-    private void ChangeActivation(Component component, bool activate)
+    public void ChangeActivation(Component component, bool activate)
     {
         component.gameObject.SetActive(activate);
     }

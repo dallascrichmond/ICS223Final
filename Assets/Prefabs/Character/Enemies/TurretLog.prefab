@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1681666766781054994}
   - component: {fileID: 1681666766781054988}
   - component: {fileID: 1681666766781054991}
-  - component: {fileID: 1681666766781055470}
+  - component: {fileID: 8476948050977681278}
   m_Layer: 6
   m_Name: TurretLog
   m_TagString: enemy
@@ -198,7 +198,7 @@ MonoBehaviour:
   thrust: 4
   knockTime: 0.2
   damage: 1
---- !u!114 &1681666766781055470
+--- !u!114 &8476948050977681278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,13 +215,13 @@ MonoBehaviour:
   health: 0
   baseAttack: 0
   moveSpeed: 0
-  enemyName: Guy
+  enemyName: Shooting guy
   deathEffect: {fileID: 6521414427940197272, guid: 192c0db8de47d5d40aa577ddd69a4b21, type: 3}
+  roomSignal: {fileID: 11400000, guid: 60c3db791540f4046b5325202acc2c98, type: 2}
   myRigidBody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 6
   attackRadius: 0
-  homePosition: {fileID: 0}
   anim: {fileID: 0}
   projectile: {fileID: 6207319504506350609, guid: acb1ca9fd01512c4fb428505397d52dc, type: 3}
   fireDelay: 1
