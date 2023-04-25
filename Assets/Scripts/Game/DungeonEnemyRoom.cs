@@ -41,6 +41,7 @@ public class DungeonEnemyRoom : DungeonRoom
             foreach (SmashObject pot in pots)
                 ChangeActivation(pot, true);
             CloseDoors();
+            virturalCamera.SetActive(true);
         }
     }
 
@@ -53,6 +54,8 @@ public class DungeonEnemyRoom : DungeonRoom
 
             foreach (SmashObject pot in pots)
                 ChangeActivation(pot, false);
+
+            virturalCamera.SetActive(false);
         }
     }
 

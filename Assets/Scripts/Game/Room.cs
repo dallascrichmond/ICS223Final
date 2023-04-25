@@ -6,6 +6,7 @@ public class Room : MonoBehaviour
 {
     public Enemy[] enemies;
     public SmashObject[] pots;
+    public GameObject virturalCamera;
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
@@ -16,6 +17,8 @@ public class Room : MonoBehaviour
 
             foreach (SmashObject pot in pots)
                 ChangeActivation(pot, true);
+
+            virturalCamera.SetActive(true);
         }
     }
 
@@ -28,6 +31,8 @@ public class Room : MonoBehaviour
 
             foreach (SmashObject pot in pots)
                 ChangeActivation(pot, false);
+
+            virturalCamera.SetActive(false);
         }
     }
 
