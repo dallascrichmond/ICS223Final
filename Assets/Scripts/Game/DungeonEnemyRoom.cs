@@ -5,7 +5,6 @@ using UnityEngine;
 public class DungeonEnemyRoom : DungeonRoom
 {
     public Door[] doors;
-    private int enemyCount = 0;
 
     private void Start()
     {
@@ -14,21 +13,7 @@ public class DungeonEnemyRoom : DungeonRoom
 
     public void CheckEnemies()
     {
-        enemyCount = 0;
-        for(int i = 0; i < enemies.Length; i++)
-        {
-            if (enemyCount < enemies.Length - 1)
-            {
-                if (!enemies[i].gameObject.activeInHierarchy)
-                {
-                    enemyCount++;
-                }
-            }
-            else
-            {
-                OpenDoors();
-            }
-        }
+        OpenDoors();
     }
 
     protected override void OnTriggerEnter2D(Collider2D other)
