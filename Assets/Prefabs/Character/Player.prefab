@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9026105814688406761}
   - component: {fileID: 9026105814688406760}
   - component: {fileID: 9026105814688406766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &9026105814688406756
@@ -163,6 +163,9 @@ MonoBehaviour:
   startingPosition: {fileID: 11400000, guid: e9797ec88c12c74499f231d24888a1ee, type: 2}
   playerInventory: {fileID: 11400000, guid: 9e6a2f48e7db58d46a2cd40351db3baf, type: 2}
   receivedItemSprite: {fileID: 9026105816713271243}
+  playerHit: {fileID: 11400000, guid: a9632d97a11749d49a0306ead5590580, type: 2}
+  projectile: {fileID: 1146049258306139357, guid: 4eff4fc40c195ce4c9348d939f77e26e, type: 3}
+  reduceMagic: {fileID: 11400000, guid: 18be0b0297555dd4683540d57627616c, type: 2}
 --- !u!95 &9026105814688406762
 Animator:
   serializedVersion: 4
@@ -262,7 +265,7 @@ GameObject:
   - component: {fileID: 9026105815039601558}
   - component: {fileID: 9026105815039601557}
   - component: {fileID: 9026105815039601556}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leftHitBox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -347,7 +350,7 @@ GameObject:
   - component: {fileID: 9026105815175797690}
   - component: {fileID: 9026105815175797689}
   - component: {fileID: 9026105815175797688}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: downHitBox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -429,7 +432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9026105815582511240}
   - component: {fileID: 9026105815582511241}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ContextClue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,8 +492,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 379833335
-  m_SortingLayer: 2
+  m_SortingLayerID: -602279055
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 865648002, guid: 416b768dce7e0144a822f28c6e3bd4ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -514,7 +517,7 @@ GameObject:
   - component: {fileID: 9026105816157793813}
   - component: {fileID: 9026105816157793812}
   - component: {fileID: 9026105816157793819}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upHitBox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -602,7 +605,7 @@ GameObject:
   - component: {fileID: 9026105816330208700}
   - component: {fileID: 9026105816330208675}
   - component: {fileID: 9026105816330208674}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rightHitBox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -688,7 +691,7 @@ GameObject:
   - component: {fileID: 9026105816713271237}
   - component: {fileID: 9026105816713271243}
   - component: {fileID: 9026105816713271236}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ReceivedItem
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
