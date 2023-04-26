@@ -16,8 +16,8 @@ TagManager:
   - Enemy
   - EnemyProjectile
   - Rooms
-  - 
-  - 
+  - PlayerProjectile
+  - Player
   - 
   - 
   - 
