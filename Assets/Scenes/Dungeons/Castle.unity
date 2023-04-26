@@ -406,6 +406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2651634553674410096, guid: 38c18cd2572c96d4dbb314208c0e5139, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2651634553674410107, guid: 38c18cd2572c96d4dbb314208c0e5139, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3533,24 +3537,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6714443877040592771, guid: 7083fae90e95e7f48a54dfa63169eb39, type: 3}
   m_PrefabInstance: {fileID: 776077424}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &776077428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776077426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aed3b674fb29c3c4b97cc77cfa255a17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 1794890216}
-  pots: []
-  virturalCamera: {fileID: 776077427}
-  doors:
-  - {fileID: 1646836534}
 --- !u!114 &776077429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3567,8 +3553,8 @@ MonoBehaviour:
   signalEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 776077428}
-        m_TargetAssemblyTypeName: DungeonEnemyRoom, Assembly-CSharp
+      - m_Target: {fileID: 776077430}
+        m_TargetAssemblyTypeName: BossRoom, Assembly-CSharp
         m_MethodName: CheckEnemies
         m_Mode: 1
         m_Arguments:
@@ -3579,6 +3565,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &776077430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776077426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a1aa980d040214ba64cbea67d4fae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1794890216}
+  pots: []
+  virturalCamera: {fileID: 776077427}
+  doors:
+  - {fileID: 1646836534}
 --- !u!1 &845845086
 GameObject:
   m_ObjectHideFlags: 0

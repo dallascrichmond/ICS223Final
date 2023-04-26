@@ -11,7 +11,7 @@ public class DungeonEnemyRoom : DungeonRoom
         OpenDoors();
     }
 
-    public void CheckEnemies()
+    public virtual void CheckEnemies()
     {
         OpenDoors();
     }

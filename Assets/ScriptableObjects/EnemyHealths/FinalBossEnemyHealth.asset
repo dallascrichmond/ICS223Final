@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 860b84dbd4146134c872a6adad70d694, type: 3}
   m_Name: FinalBossEnemyHealth
   m_EditorClassIdentifier: 
-  initialValue: 20
-  RuntimeValue: 20
+  initialValue: 12
+  RuntimeValue: 12
