@@ -166,6 +166,7 @@ MonoBehaviour:
   playerHit: {fileID: 11400000, guid: a9632d97a11749d49a0306ead5590580, type: 2}
   projectile: {fileID: 1146049258306139357, guid: 4eff4fc40c195ce4c9348d939f77e26e, type: 3}
   reduceMagic: {fileID: 11400000, guid: 18be0b0297555dd4683540d57627616c, type: 2}
+  bow: {fileID: 11400000, guid: 27e3788bde840424ebab8b8b6b2e83c4, type: 2}
 --- !u!95 &9026105814688406762
 Animator:
   serializedVersion: 4
