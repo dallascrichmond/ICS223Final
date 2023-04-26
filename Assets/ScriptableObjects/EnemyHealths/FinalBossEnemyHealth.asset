@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7356b305f8f80894eaeb3d8c48ab4324, type: 3}
-  m_Name: PlayerInventory
+  m_Script: {fileID: 11500000, guid: 860b84dbd4146134c872a6adad70d694, type: 3}
+  m_Name: FinalBossEnemyHealth
   m_EditorClassIdentifier: 
-  currentItem: {fileID: 0}
-  items: []
-  numberOfKeys: 9
-  coins: 1
-  maxMagic: 10
-  currentMagic: 8
+  initialValue: 20
+  RuntimeValue: 20
