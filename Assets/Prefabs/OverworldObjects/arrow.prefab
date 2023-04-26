@@ -149,6 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   myRigidbody: {fileID: 7772007066563318766}
+  lifetime: 2
+  magicCost: 1
 --- !u!114 &-5906144917680521262
 MonoBehaviour:
   m_ObjectHideFlags: 0
