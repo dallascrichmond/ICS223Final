@@ -2084,9 +2084,9 @@ TextureImporter:
       name: objects_101
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 177
-        width: 12
+        width: 16
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2105,9 +2105,9 @@ TextureImporter:
       name: objects_102
       rect:
         serializedVersion: 2
-        x: 83
+        x: 80
         y: 177
-        width: 11
+        width: 16
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2126,9 +2126,9 @@ TextureImporter:
       name: objects_103
       rect:
         serializedVersion: 2
-        x: 100
+        x: 96
         y: 177
-        width: 10
+        width: 16
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2147,9 +2147,9 @@ TextureImporter:
       name: objects_104
       rect:
         serializedVersion: 2
-        x: 115
+        x: 112
         y: 177
-        width: 11
+        width: 16
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3017,7 +3017,6 @@ TextureImporter:
     nameFileIdTable:
       objects_4: 754054671
       objects_118: 515173289
-      Rock 1: 591835958
       objects_84: 78371166
       objects_44: 1366228535
       objects_45: -1067378063
@@ -3031,6 +3030,7 @@ TextureImporter:
       objects_41: -412731548
       objects_89: -1971174902
       objects_109: 1587366881
+      objects_128: 1413816456
       objects_3: -908391118
       objects_119: 163563572
       objects_18: -1961605814
@@ -3078,11 +3078,11 @@ TextureImporter:
       objects_70: -1696293418
       objects_106: -19314259
       objects_131: 1824917717
-      objects_104: -1886156367
       objects_107: -879606199
+      objects_87: 378571075
       objects_7: -1360838353
       objects_80: -1277303653
-      objects_87: 378571075
+      objects_104: -1886156367
       objects_22: -1907422754
       objects_47: 1121873070
       objects_42: -897510137
@@ -3154,10 +3154,10 @@ TextureImporter:
       objects_130: -1627372248
       objects_111: -1525666293
       objects_142: -179109632
-      objects_61: -2063511809
       objects_88: -1347709687
+      Rock 1: 591835958
       objects_127: -805157378
-      objects_128: 1413816456
+      objects_61: -2063511809
       objects_20: -1073475525
   spritePackingTag: 
   pSDRemoveMatte: 0
